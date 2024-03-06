@@ -1,0 +1,139 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wenyfour Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .dashboard-section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .dashboard-section h2 {
+            font-size: 24px;
+        }
+
+        .dashboard-card {
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .dashboard-card h3 {
+            font-size: 20px;
+        }
+
+        .dashboard-card p {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            height: 75px; /* Enlarge the logo by 50% */
+            margin-right: 10px;
+        }
+
+        .center-heading {
+            text-align: center;
+        }
+        p {
+            color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+   
+        <div class="logo">
+            {% comment %} <img src="./assets/weny4logo.png" alt="Logo"> {% endcomment %}
+            <a href="dashoard.html"><{% static img src=" ./assets/weny4logo.png" alt="Logo" style="width: 60px;"/ %} > </a>             
+            <h1 class="center-heading">Wenyfour Admin Dashboard</h1>
+        </div>
+
+        <div class="dashboard-section">
+            <h2>Total Overview</h2>
+            <div class="d-flex justify-content-between">
+                <div class="dashboard-card">
+                    <h3>Total Rides</h3>
+                    <p>178</p>
+                </div>
+                <div class="dashboard-card">
+                    <h3>Total Users</h3>
+                    <p>38</p>
+                </div>
+                <div class="dashboard-card">
+                    <h3>Total Revenue</h3>
+                    <p>₦ 1,854,376</p>
+                </div>
+                <div class="dashboard-card">
+                    <h3>Average Ride Distance</h3>
+                    <p>60 km</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="dashboard-section">
+            <h2>Ride Information</h2>
+            <div class="d-flex justify-content-between">
+                <div class="dashboard-card">
+                    <h3>Ride Requests</h3>
+                    <p>120</p>
+                </div>
+                <div class="dashboard-card">
+                    <h3>Ride History</h3>
+                    <p>108</p>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Successful Rides</h3>
+                    <p>98</p>
+                </div>
+                <div class="dashboard-card">
+                    <h3>Unsuccessful Rides</h3>
+                    <p>28</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard-section">
+            <h2>Other Information</h2>
+            <div class="d-flex justify-content-between">
+                                <div class="dashboard-card">
+                    <h3>Kilometers Covered</h3>
+                    <p>67800 km</p>
+                </div>
+                <div class="dashboard-card">
+                    <h3>User Management</h3>
+                    <p>34</p>
+                </div>
+                <div class="dashboard-card">
+                    <h3>Feedback </h3>
+                    <p>45</p>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3> Ratings</h3>
+                    <p>8/10</p>
+                </div>
+                <div class="dashboard-card">
+                    <h3>Financial Summary</h3>
+                    <p>₦ 2,876,654</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
